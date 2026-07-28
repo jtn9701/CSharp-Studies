@@ -1,9 +1,7 @@
 ﻿class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        UserInput.WriteGreeting(UserInput.GetUserName(), UserInput.GetUserAge());
+        Fibonacci.PrintFibonnaciSeries(10);
     }
-
-
 }
