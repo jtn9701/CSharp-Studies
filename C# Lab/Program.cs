@@ -2,6 +2,10 @@
 {
     static void Main()
     {
-        Fibonacci.PrintFibonnaciSeries(10);
+
+        Timer.TimeAllFibonacciActions();
+        
     }
+
+
 }
