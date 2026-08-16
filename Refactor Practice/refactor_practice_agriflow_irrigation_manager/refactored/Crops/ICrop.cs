@@ -1,8 +1,11 @@
-interface ICrop
+namespace Refactor
 {
-    string CropName;
-    float WateringThreshold;
-    int BaseWateringTimeMinuntes;
-    float GallonsPerSqFtPerMinute;
-    abstract bool NeedsFertigation(Zone zone);
+    public interface ICrop
+    {
+        string CropName { get; }
+        double WateringThreshold { get; }
+        int BaseWateringTimeMinutes { get; }
+        double GallonsPerSqFtPerMinute { get; }
+        abstract bool NeedsFertigation(Zone zone);
+    }
 }

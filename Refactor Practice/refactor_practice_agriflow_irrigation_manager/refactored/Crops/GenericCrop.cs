@@ -1,9 +1,12 @@
-public class GenericCrop : ICrop
+namespace Refactor
 {
-    public string CropName { get; } = "GenericCrop";
-    public float WateringThreshold { get; } = 40.0;
-    public int BaseWateringTimeMinuntes { get; } = 15;
-    public float GallonsPerSqFtPerMinute { get; } = 0.035;
+    public class GenericCrop : ICrop
+    {
+        public string CropName { get; } = "GenericCrop";
+        public double WateringThreshold { get; } = 40.0;
+        public int BaseWateringTimeMinutes { get; } = 15;
+        public double GallonsPerSqFtPerMinute { get; } = 0.035;
 
-    public bool NeedsFertigation(Zone zone) => false;
+        public bool NeedsFertigation(Zone zone) => false;
+    }
 }
